@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'unsubscription-hoc';
+  public alive: boolean = true;
+
+  public destroy() {
+    this.alive = false;
+  }
+
+  public revive() {
+    this.alive = true;
+  }
 }
